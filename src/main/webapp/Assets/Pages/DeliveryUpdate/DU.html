@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Delivery Update - Officer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+<h1>Package Update Status</h1>
+
+
+<form action="update.jsp" method="POST">
+
+<label for="booking-id">Enter Booking ID: BK</label>
+<input type="text" id="booking-id" name="booking-id" required pattern="\d{10}" title="Enter 10 digits Numeric Booking Id">
+
+
+<label for="status">Select Status:</label>
+<select id="status" name="status" required>
+<option value="">--Select--</option>
+<option value="picked-up">Picked up</option>
+<option value="in-transit">In Transit</option>
+<option value="delivered">Delivered</option>
+<option value="returned">Returned</option>
+
+
+
+</select>
+
+
+
+<button type="submit">Update Status</button>
+
+</form>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

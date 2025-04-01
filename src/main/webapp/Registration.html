@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Customer Registration</title>
+
+	<link rel="stylesheet" href="Assets/style.css">
+
+</head>
+
+<body>
+	<div class="header"><h4 class="text-info">Customer Registration (Parcel Management System)</h4></div>
+
+	<div class="form-container">
+<!--  -->
+		<h2>Register Now</h2>
+
+		<!-- Form -->
+
+		<form action="RegistrationServlet" id="rform" method="post" onsubmit="handleSubmit(event);">
+
+
+			<section>
+
+				<h3>Personal Information:</h3>
+
+				<label for="cname">Customer Name:</label>
+				<input type="text" maxlength="50" id="cname" name="customerName" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="code">Country Code:</label>
+				<select id="code" name="countryCode" required>
+					<option value="+1">(USA)</option>
+					<option value="+44">(UK)</option>
+					<option value="+91">(INDIA)</option>
+
+				</select>
+
+				<label for="mob">Mobile:</label>
+				<input type="text" id="mob" maxlength="name" name="mobileNumber" pattern="\d{10}" required>
+
+
+
+				<label for="ads">Address:</label>
+				<textarea id="ads" name="address" required></textarea>
+
+
+
+
+
+			</section>
+
+			<section>
+
+				<h3>UserName and Password:</h3>
+
+				<label for="uid">UserID:</label>
+				<input type="text" id="uid" minlength="5" maxlength="20" name="userID" required>
+
+
+				<label for="pw">Password:</label>
+				<input type="password" id="pw" name="password" maxlength="30" placeholder="Enter Password" maxlength="30" 
+				pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{1,30}$" required title="Max 30 characters. Min One Upper Character, lower case, and special character.">
+
+
+				<label for="cpw">Confirm Password:</label>
+				<input type="password" id="cpw" name="confirmPassword" placeholder="confirm Password" required>
+
+
+
+
+
+
+			</section>
+
+
+
+
+			<div class="preference-section">
+
+				<h3>Preferences:</h3>
+				<div class="checkbox-container">
+					<label class="checkbox-label" for="pref">Email Preference</label>
+					<input type="checkbox" id="pref" value="email" name="preferences">
+
+				</div>
+
+			</div>
+
+
+			<div class="buttons">
+
+
+
+				<button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+				<button type="reset" id="resetBtn" class="btn btn-success" value="Reset">Reset</button>
+
+
+
+
+			</div>
+
+
+
+		</form>
+
+
+
+	</div>
+
+
+
+
+
+	<script type="text/javascript">
+
+		function handleSubmit(event) {
+			var password = document.getElementById("pw").value;
+			var con_password = document.getElementById("cpw").value;
+			if (password!=con_password){
+				alert("password Not Matched! Enter Again!");
+				event.preventDefault();
+				return false;
+			}else{
+			//event.preventDefault(); // Prevent Submission
+			alert('Registration Successfull!');
+			}
+			
+		}
+
+        
+
+	</script>
+	
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+<html>
+<head>
+    <title>Shipped Packages</title>
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+
+    <h2>Shipped Packages</h2>
+
+    <!-- Search Form -->
+    <form id="searchForm"  method="post" action="action.jsp">
+        <label>Booking ID: BK</label>
+        <input type="text" name="bookingId" id="bookingId" required pattern="\d{10}" title="Enter 10 digits Numeric Booking Id">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Table to Display Search Results -->
+    <h3>Package Status</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Booking ID</th>
+                <th>Customer ID</th>       
+                <th>Receiver Name</th>
+                <th>Receiver Address</th>
+                <th>Service Cost</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="searchResults">
+        
+                
+        
+        
+        </tbody>
+    </table>
+
+    
+</body>
+</html>

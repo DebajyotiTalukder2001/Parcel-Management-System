@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login as Officer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class = "login-container">
+
+<h2>Login as Officer</h2>
+
+<form action="LGO.jsp" method="post">
+
+
+<label for ="uid">User ID:</label>
+<input type="text" name="uname" id="uid" minlength="5" maxlength="20" placeholder="Enter User ID" required>
+
+<label for ="pw">Password:</label>
+<input type="password" name="pwd" id="pwd" placeholder="Enter Password" maxlength="30" 
+pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{1,30}$" required title="Max 30 characters. Min One Upper Character, lower case, and special character.">
+
+
+<button type="submit">Log in</button>
+
+
+</form>
+
+
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Now</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-container">
+    <h2>Login as a Customer</h2>
+
+    <form action="Login.jsp" method="post">
+        <label for="uid">User ID:</label>
+        <input type="text" name="uname" id="uid" minlength="5" maxlength="20" placeholder="Enter User ID" required>
+
+        <label for="pwd">Password:</label>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter Password" maxlength="30"
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{1,30}$" required title="Max 30 characters. Min One Upper Character, lowercase, and special character.">
+
+        <button type="submit">Log in</button>
+
+        <p><a href="../../../Registration.html">Not Registered Yet? Register Now</a></p>
+
+        <p><a href="../LoginOfficer/LGO.html" id="log" target="_blank">Log in as Officer</a></p>
+    </form>
+</div>
+
+</body>
+</html>

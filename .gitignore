@@ -1,0 +1,6 @@
+build
+*.jar
+.settings
+.project
+derby.log
+.classpath

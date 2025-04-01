@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Parcel Management System</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Calibri', sans-serif; }
+        body { background-color: rgb(253, 255, 228); color: white; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; text-align: center; }
+        
+        .navbar { 
+            width: 100%; 
+            background: linear-gradient(90deg, #507D2A, #3f6421); 
+            padding: 15px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: absolute; 
+            top: 0; 
+            left: 0;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .navbar h2 { color: white; font-size: 22px; font-weight: bold; margin-left: 20px; }
+        .nav-links { margin-right: 20px; }
+        .navbar a { 
+            color: white; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-size: 18px; 
+            padding: 10px; 
+            margin: 5px; 
+            border-radius: 5px; 
+            transition: background 0.3s;
+        }
+        .navbar a:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+        .content { max-width: 600px; padding: 20px; margin-top: 100px; }
+        h1 { font-size: 40px; margin-bottom: 20px; color: #01241c; text-shadow: 2px 2px 8px rgb(225 225 225); }
+        p { font-size: 18px; line-height: 1.5; color:rgb(29, 28, 28)}
+
+        .buttons { margin-top: 20px; }
+        .btn { 
+            display: inline-block; 
+            padding: 12px 24px; 
+            font-size: 18px; 
+            color: white; 
+            background-color: #507D2A; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 10px; 
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn:hover { background-color: #3f6421; transform: scale(1.05); }
+
+        .footer { position: absolute; bottom: 10px; font-size: 14px; color: gray; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Parcel Management System</h2>
+        <div class="nav-links">
+            <a href="Assets/Pages/Login/Login.html">Login</a>
+            <a href="Registration.html">New Here? Register</a>
+            <a href="Assets/Pages/Login/Login.html">Contact Support</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Parcel Management System</h1>
+        <p>
+            Our Parcel Management System provides a seamless way to send and receive parcels with ease. 
+            Track your shipments, choose delivery preferences, and ensure safe parcel handling. 
+            Whether you're an officer or a customer, we provide efficient solutions for your logistics needs.
+        </p>
+       
+        <div class="buttons">
+            <a href="Assets/Pages/Login/Login.html" class="btn">Login</a>
+            <a href="Registration.html" class="btn">Register</a>
+        </div>
+    </div>
+
+    <div class="footer">© 2025 Parcel Management System</div>
+</body>
+</html>

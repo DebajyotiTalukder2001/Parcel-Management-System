@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Schedule Pickup - Officer</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class ="container">
+
+<h2>Schedule Pickup</h2>
+
+<form id="pickupForm"  method="post" onsubmit="handleSubmit(event);">
+
+<div class="form-group">
+<label for="pickupDateTime">Pickup Date and Time:</label>
+<input type="datetime-local" id="pickupDateTime" name="pickupDateTime" required>
+<span class="error" id="pickupDateTimeError">Please select a date and time.</span>
+
+</div>
+
+<button type="submit" class="btn">Save</button>
+
+
+
+
+
+</form>
+
+
+
+
+
+
+</div>
+
+<script>
+
+function handleSubmit(event){
+    event.preventDefault();
+			alert('Pickup Scheduled Successfull!');
+			window.location.href='#';
+}
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

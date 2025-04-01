@@ -1,0 +1,141 @@
+body{
+	
+	font-family: Arial, sans-serif;
+	
+	margin:0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.container{
+	
+	width: 80%;
+	max-width: 750px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: rgb(243, 255, 242);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	
+	
+}
+
+
+h1{
+	
+	text-align: center;
+	color: #333;
+}
+
+form{
+	
+	display: flex;
+	flex-direction: column;
+}
+
+
+fieldset{
+	
+	margin-bottom: 20px;
+	
+	padding: 10px;
+	
+	border: 1px solid #ddd;
+	
+	border-radius: 8px;
+	
+	background-color: #fdfdec;
+	
+	}
+	
+	
+	
+	legend{
+	
+	font-weight: bold;
+	color: #333;
+	}
+	
+	
+	label{
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: #555;
+	
+	}
+	
+	
+	
+	input, textarea, select{
+	
+	margin-bottom: 12px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	
+	}
+	
+	
+	
+	input[type="text"],
+	input[type="datetime-local"], textarea {
+	
+	width: 95%;
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	textarea{
+	
+	height: 100px;
+	}
+	
+	
+	
+	
+	button{
+	
+	padding: 12px 20px;
+	
+	background-color: #7268fd;
+	
+	
+	color: white;
+	
+	border: none;
+	
+	border-radius: 4px;
+	cursor: pointer;
+	
+	font-size: 16px;
+
+	}
+	
+	
+	
+	
+	
+	button:hover{
+	
+	background-color: #04310e;
+	
+	}
+	
+	
+	input[readonly]{
+	
+	background-color: #f2f2f2;
+	
+	}
+	
+	
+	input:invalid{
+	
+	
+	border-color: rgb(102, 100, 100);
+	}
+	
